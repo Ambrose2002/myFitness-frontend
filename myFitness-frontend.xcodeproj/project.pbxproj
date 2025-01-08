@@ -56,15 +56,71 @@
 		AB0DC5652D2E0FEF00EF5350 /* myFitness-frontend */ = {
 			isa = PBXGroup;
 			children = (
-				AB0DC5662D2E0FEF00EF5350 /* AppDelegate.swift */,
-				AB0DC5682D2E0FEF00EF5350 /* SceneDelegate.swift */,
+				AB0DC5802D2E122700EF5350 /* Utilities */,
+				AB0DC57F2D2E121200EF5350 /* ViewModels */,
+				AB0DC57E2D2E11FB00EF5350 /* Resources */,
+				AB0DC57D2D2E11EF00EF5350 /* Networking */,
+				AB0DC57C2D2E11E300EF5350 /* Views */,
+				AB0DC57B2D2E11D700EF5350 /* Models */,
+				AB0DC57A2D2E119300EF5350 /* App */,
 				AB0DC56A2D2E0FEF00EF5350 /* ViewController.swift */,
-				AB0DC56C2D2E0FEF00EF5350 /* Main.storyboard */,
 				AB0DC56F2D2E0FF100EF5350 /* Assets.xcassets */,
 				AB0DC5712D2E0FF100EF5350 /* LaunchScreen.storyboard */,
-				AB0DC5742D2E0FF100EF5350 /* Info.plist */,
 			);
 			path = "myFitness-frontend";
+			sourceTree = "<group>";
+		};
+		AB0DC57A2D2E119300EF5350 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DC5662D2E0FEF00EF5350 /* AppDelegate.swift */,
+				AB0DC5682D2E0FEF00EF5350 /* SceneDelegate.swift */,
+				AB0DC56C2D2E0FEF00EF5350 /* Main.storyboard */,
+				AB0DC5742D2E0FF100EF5350 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB0DC57B2D2E11D700EF5350 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB0DC57C2D2E11E300EF5350 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB0DC57D2D2E11EF00EF5350 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AB0DC57E2D2E11FB00EF5350 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB0DC57F2D2E121200EF5350 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB0DC5802D2E122700EF5350 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
