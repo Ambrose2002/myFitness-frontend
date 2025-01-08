@@ -65,7 +65,6 @@
 				AB0DC57B2D2E11D700EF5350 /* Models */,
 				AB0DC57A2D2E119300EF5350 /* App */,
 				AB0DC56A2D2E0FEF00EF5350 /* ViewController.swift */,
-				AB0DC56F2D2E0FF100EF5350 /* Assets.xcassets */,
 				AB0DC5712D2E0FF100EF5350 /* LaunchScreen.storyboard */,
 			);
 			path = "myFitness-frontend";
@@ -106,6 +105,7 @@
 		AB0DC57E2D2E11FB00EF5350 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB0DC56F2D2E0FF100EF5350 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
