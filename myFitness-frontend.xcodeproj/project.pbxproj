@@ -13,6 +13,7 @@
 		AB0DC56E2D2E0FEF00EF5350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0DC56C2D2E0FEF00EF5350 /* Main.storyboard */; };
 		AB0DC5702D2E0FF100EF5350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0DC56F2D2E0FF100EF5350 /* Assets.xcassets */; };
 		AB0DC5732D2E0FF100EF5350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0DC5712D2E0FF100EF5350 /* LaunchScreen.storyboard */; };
+		AB0DC5832D2E17A700EF5350 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DC5822D2E17A700EF5350 /* UIColor+CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB0DC56F2D2E0FF100EF5350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB0DC5722D2E0FF100EF5350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB0DC5742D2E0FF100EF5350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0DC5822D2E17A700EF5350 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				AB0DC5802D2E122700EF5350 /* Utilities */,
-				AB0DC57F2D2E121200EF5350 /* ViewModels */,
 				AB0DC57E2D2E11FB00EF5350 /* Resources */,
 				AB0DC57D2D2E11EF00EF5350 /* Networking */,
 				AB0DC57C2D2E11E300EF5350 /* Views */,
@@ -109,18 +110,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AB0DC57F2D2E121200EF5350 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		AB0DC5802D2E122700EF5350 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AB0DC5812D2E177500EF5350 /* Extensions */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AB0DC5812D2E177500EF5350 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DC5822D2E17A700EF5350 /* UIColor+CustomColors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +199,7 @@
 			files = (
 				AB0DC56B2D2E0FEF00EF5350 /* ViewController.swift in Sources */,
 				AB0DC5672D2E0FEF00EF5350 /* AppDelegate.swift in Sources */,
+				AB0DC5832D2E17A700EF5350 /* UIColor+CustomColors.swift in Sources */,
 				AB0DC5692D2E0FEF00EF5350 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
