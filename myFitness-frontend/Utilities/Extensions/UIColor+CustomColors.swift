@@ -30,4 +30,5 @@ extension UIColor {
     static let pink = UIColor.fromHex("ffafcc")
     static let lightPink = UIColor.fromHex("ffc8dd")
     static let lightPurple = UIColor.fromHex("cdb4db")
+    
 }
