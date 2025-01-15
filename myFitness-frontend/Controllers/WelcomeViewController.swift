@@ -1,4 +1,8 @@
 import UIKit
+import Firebase
+import GoogleSignIn
+import FirebaseAuth
+import FirebaseCore
 
 class WelcomeViewController: UIViewController {
 
@@ -99,6 +103,40 @@ class WelcomeViewController: UIViewController {
     @objc private func getStartedTapped() {
         print("Get Started button tapped")
         // Navigate to onboarding or sign-up screen
+        guard let clientID = FirebaseApp.app()?.options.clientID else {
+            print("Error: Firebase client ID not found.")
+            return
+        }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+            
+//            guard let self = self else {return}
+            
+            if let error = error {
+                print("Google sign-in error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString else {
+                print("Error: Failed to retrieve ID token.")
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase sign-in error: \(error.localizedDescription)")
+                    return
+                }
+                
+                print("User signed in with Firebase: \(authResult?.user.displayName ?? "No name")")
+            }
+        }
     }
 
     @objc private func loginTapped() {
